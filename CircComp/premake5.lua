@@ -1,4 +1,4 @@
-project "WalnutApp"
+project "CircComp"
    kind "ConsoleApp"
    language "C++"
    cppdialect "C++17"
