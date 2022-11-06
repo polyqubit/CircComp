@@ -9,7 +9,10 @@ public:
 	virtual void OnUIRender() override
 	{
 		ImGui::Begin("Hello");
-		ImGui::Button("Button");
+		if (ImGui::Button("test"))
+		{
+			ImGui::Text("Wow!!");
+		}
 		ImGui::End();
 
 		ImGui::ShowDemoWindow();
