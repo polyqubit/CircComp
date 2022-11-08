@@ -34,8 +34,7 @@ uint32_t Renderer::PixelShader(glm::vec2 coord)
 {
 	uint8_t r = (uint8_t)(coord.x * 255.0f);
 	uint8_t g = (uint8_t)(coord.y * 255.0f);
-	uint8_t b = (uint8_t)(sin(std::time(0)));
 
 	//ABGR format
-	return 0xff000000 | (g<<10) | r;
+	return 0xff000000 | (g << 16) | (g << 8) | r;
 }
